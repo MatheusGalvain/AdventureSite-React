@@ -1,0 +1,195 @@
+@import url(//db.onlinewebfonts.com/c/3d54c69203e113cfdaa3948a188f48dc?family=DIN+Next);
+
+.card-img {
+    height: 100%;
+    width: 200px;
+    vertical-align:middle;
+    display: inline-block;
+}
+
+.food_wrapper{
+    display: inline-block;
+    width: calc(200px - 100%);
+    width: 39em;
+    margin-left: 20px;
+   
+}
+
+.span_food{
+    margin-left: 20px;
+    font-family: "DIN Next";
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+.card_blade{
+    display: block;
+    background-color: #d7d7d7;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin: 20px 0px;
+    
+}
+
+.card_blader:hover{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+.card_blade_text{
+    font-family: "DIN Next";
+    height: 100px;
+    display: block;
+}
+
+.card_title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: "DIN Next";
+}
+
+
+.food_card{
+    margin-top: 10px;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.li__card__text{
+    margin-top: 10px;
+    font-family: "DIN Next";
+    font-size: 18px;
+}
+
+.card-text {
+    margin-top: 10px;
+    font-family: "DIN Next";
+    font-size: 18px;
+}
+
+.card-title-main {
+    font-family: "DIN Next";
+    margin-top: 41px;
+}
+
+.card-title-main::after {
+    content: '';
+    display: block;
+    width: 250px;
+    height: 3px;
+    background: linear-gradient(rgb(14, 8, 0), rgb(255, 255, 255));
+}
+
+.card-title {
+    font-family: "DIN Next";
+    margin-top: 41px;
+}
+
+.card-title::after {
+    content: '';
+    display: block;
+    margin-left: 45px;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(rgb(14, 8, 0), rgb(255, 255, 255));
+}
+
+.card-img-overlay {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.main {
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    color: #fff;
+    
+}
+
+.cards__item{
+    margin-top: 40px;
+    display:inline-block;
+    margin-right: 6px;
+    margin-left: 60px;
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    transition: 0.3s;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.box:hover{
+    transform: translateY(-15px);
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 560px;
+    height: 50px;
+    transform: rotate(-40deg) translateY(-100px);
+    background: linear-gradient(to right, #73ccde, #023a45);
+}
+
+.box:hover::after{
+    animation: border-effect 1.9s ease;
+}
+
+@keyframes border-effect{
+    0%{
+        transform: rotate(-40deg) translateY(-100px);
+    }
+    100%{
+        transform: rotate(-40deg) translateY(530px);
+    }
+}
+
+.text-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e8e9eb;
+    width: 295px;
+    height: 415px;
+    z-index: 10;
+    color: rgb(20, 4, 4);
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.text-content a{
+    text-decoration: none;
+    display: block;
+    width: 140px;
+    text-align: center;
+    color: #FFF;
+    line-height: 43px;
+    border: 2px solid #FFF;
+}
+
+
+@media screen and (max-width: 960px) {
+    .card-img-overlay {
+        width: 84%;
+        margin-left: 50px;
+      }
+}
+
+@media screen and (max-width: 768px) {
+    .card-img-overlay {
+        width: 84%;
+        margin-left: 50px;
+      }
+}
+
+
+  
